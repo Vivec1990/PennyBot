@@ -54,7 +54,7 @@ public class PennyBot {
 	}
 
 	public static void main(String[] args) {
-		new PennyBot("NDA3Mjc0MTk0MzIyMzI1NTE2.DU_LbQ.xdvlkwG-pbg-fhGiQWE16BfNnng");
+		new PennyBot("NDEzMDA4Njc3NDY1ODgyNjQ2.DWSk0g.ohfjvFrHpeAcoFfp1kN17CGeB-w");
 	}
 	
 }

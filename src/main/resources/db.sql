@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS custom_commands (id INTEGER PRIMARY KEY,	name TEXT UNIQUE NOT NULL, message TEXT, image BLOB, mentions TEXT);
+CREATE TABLE IF NOT EXISTS command_ban (command_name TEXT NOT NULL, user_id TEXT NOT NULL, UNIQUE(command_name, user_id) ON CONFLICT REPLACE);

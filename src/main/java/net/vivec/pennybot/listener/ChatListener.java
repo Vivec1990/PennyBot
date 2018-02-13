@@ -10,6 +10,7 @@ import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.User;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
+import net.vivec.pennybot.command.Command;
 import net.vivec.pennybot.command.CommandHelper;
 
 public class ChatListener extends ListenerAdapter {
@@ -39,6 +40,9 @@ public class ChatListener extends ListenerAdapter {
 			}
 		}
 		if(!containsCommandPrefix) return;
+		
+		Command command = new Command(message);
+		CommandHelper.getInstance().handleCommand(command);
 		
 	}
 	
